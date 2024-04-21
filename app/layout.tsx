@@ -5,8 +5,7 @@ import { PropsWithChildren } from "react";
 import { TailwindIndicator } from "@/components/TailwindIndicator";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Providers } from "./Providers";
 
 export const metadata: Metadata = {
   title: "Next Lab",
@@ -19,10 +18,12 @@ export default function RootLayout({ children }: PropsWithChildren) {
       <html lang="fr" className="h-full" suppressHydrationWarning>
         <head />
         <body className="flex h-full  min-h-screen flex-col">
-          <Header />
-          {children}
-          <Footer />
-          <TailwindIndicator />
+          <Providers>
+            <Header />
+            {children}
+            <Footer />
+            <TailwindIndicator />
+          </Providers>
         </body>
       </html>
     </>
