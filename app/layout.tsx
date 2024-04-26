@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
 import { PropsWithChildren } from "react";
 import { TailwindIndicator } from "@/components/TailwindIndicator";
-import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 import { Providers } from "./Providers";
+import "./globals.css";
+import { SiteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Next Lab",
-  description: "A lab for my learning of Nextjs",
+  title: SiteConfig.title,
+  description: SiteConfig.description,
 };
 
 export default function RootLayout({ children }: PropsWithChildren) {
