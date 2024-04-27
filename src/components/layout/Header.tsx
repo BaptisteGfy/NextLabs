@@ -7,11 +7,9 @@ export const Header = () => {
     <header className="sticky top-0 z-40 flex w-full items-center border-b bg-background">
       {/* Logo */}
       <span className="mx-5 my-2 flex items-center justify-around gap-2 rounded-sm p-2">
-        <div className="flex size-10 items-center justify-center rounded-full bg-gradient-to-br from-purple-900 to-blue-900  ">
-          <Link href="/">
-            <HomeIcon size={25} absoluteStrokeWidth />
-          </Link>
-        </div>
+        <Link href="/">
+          <HomeIcon size={25} absoluteStrokeWidth />
+        </Link>
       </span>
       {/* Nav */}
       <span className="flex justify-around gap-5">
