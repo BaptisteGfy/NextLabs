@@ -1,10 +1,12 @@
-import { BoardShape } from "./tetris-type";
+import { Cell } from "./Cell";
+import { BoardShape } from "@/components/tetris/tetris-type";
+import "@/tetris/tetris.css";
 
 export type BoardProps = {
   currentBoard: BoardShape;
 };
 
-export const Board = (props: BoardProps) => {
+export const Board = ({ currentBoard }: BoardProps) => {
   return (
     <div className="board">
       {currentBoard.map((row, rowIndex) => (
