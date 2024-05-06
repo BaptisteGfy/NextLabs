@@ -1,6 +1,6 @@
 "use client";
 
-import { Board } from "@/tetris/components/Board";
+import { Board } from "@/components/tetris/Board";
 
 const board = Array.from(Array(20), () => Array(10).fill([0, "clear"]));
 

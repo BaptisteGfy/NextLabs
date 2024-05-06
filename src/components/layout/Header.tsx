@@ -25,6 +25,12 @@ export const Header = () => {
         >
           Games
         </Link>
+        <Link
+          className="text-muted-foreground hover:text-foreground hover:underline"
+          href="/ui"
+        >
+          Ui
+        </Link>
       </span>
       {/* Theme Toggle */}
       <span className="ml-auto mr-5">
