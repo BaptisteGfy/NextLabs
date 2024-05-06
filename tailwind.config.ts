@@ -78,9 +78,6 @@ const config = {
     require("tailwindcss-animate"),
     function ({ addUtilities }: any) {
       const newUtilities = {
-        ".my-rotate-y-180": {
-          transform: "rotateY(180deg)",
-        },
         ".preserve-3d": {
           transformStyle: "preserve-3d",
         },
