@@ -1,6 +1,6 @@
 import { Cell } from "./Cell";
 import { BoardShape } from "@/components/tetris/tetris-type";
-import "@/tetris/tetris.css";
+import "@/components/tetris/tetris.css";
 
 export type BoardProps = {
   currentBoard: BoardShape;
